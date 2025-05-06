@@ -1,0 +1,147 @@
+.mainBG {
+    background: #813fa0 !important;
+}
+
+.btn-sm-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-weight: normal;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-left: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+.joining {
+    padding: 10px;
+    color: #813fa0;
+    border: 1px solid !important;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.sticky-nav {
+    background: #813fa0 !important;
+    max-width: 100% !important;
+}
+.sticky-nav .navbar-nav .nav-link, .sticky-nav .navbar-collapse .joining {
+    color: #ffffff;
+}
+.strongLogo {
+        font-size: 28px;
+        color: #000000;
+        margin-top: 33px;
+        margin-right: -7px;
+        font-weight: 900;
+        text-shadow: 2px 2px 0px #813fa0;
+    font-family: Kufam !important;
+}
+.sticky-nav .navbar-brand strong {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 0px #000000 !important;
+}
+.footer-area {
+    background-color: #a25fc1 !important;
+    padding: 33px 0px 1px !important;
+}
+#heroCarousel .carousel-item {
+    height: 84vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroCarousel .carousel-caption {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+#heroCarousel h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: none;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+#heroCarousel p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #f8f9fa;
+    text-shadow: none;
+    animation: fadeInUp 1.8s ease-in-out;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    /*filter: invert(100%);*/
+}

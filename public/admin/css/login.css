@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #26b499;
+    --secondary-color: #4299e1;
+    --accent-color: #48bb78;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    /*height: 100vh;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: auto;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo-container img {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.btn-primary {
+    background: #d09b69;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.forgot-password a {
+    color: #718096;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: var(--primary-color);
+}
+
+.animated-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f37f0d;
+    font-size: 14px;
+    position: relative;
+}
+
+.login-header::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
+.required-star { color: #dc3545; margin-right: 5px; }
+.error-message { color: #dc3545; font-size: 0.875em; }
+.form-control:focus { border-color: #46885e; box-shadow: 0 0 0 0.2rem rgba(70, 136, 94, 0.25); }
